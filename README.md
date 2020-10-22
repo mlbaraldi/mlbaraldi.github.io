@@ -1,4 +1,10 @@
-### Hi there 👋
+### Ola 👋 Marcelo Baraldi aqui
+
+- 🔭 Atualmente no Programa Aspira da TecnoSpeed
+- ⚡ Estudante de Analise e Desenvolvimento de Sistemas na PUC-PR
+- 🌱 Nivel intermediario em JS, Python e Java
+- 👯 A procura de colaborar com projetos Opensource
+- 📫 Contato? mlbaraldi@hotmail.com
 
 <!--
 **mlbaraldi/mlbaraldi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
