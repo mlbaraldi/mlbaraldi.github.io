@@ -1,6 +1,6 @@
 ### Ola 👋 Marcelo Baraldi aqui
 
-- 🔭 Atualmente no Programa Aspira da TecnoSpeed
+- 🔭 Documentador e CT / Tecnospeed
 - ⚡ Estudante de Analise e Desenvolvimento de Sistemas na PUC-PR
 - 🌱 Nivel intermediario em JS, Python e Java
 - 👯 A procura de colaborar com projetos Opensource
