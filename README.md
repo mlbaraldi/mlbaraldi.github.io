@@ -1,6 +1,6 @@
 ### Ola 👋 Marcelo Baraldi aqui
 
-- 🔭 Documentador e CT / Tecnospeed
+- 🔭 Dev / Tecnospeed
 - ⚡ Estudante de Analise e Desenvolvimento de Sistemas na PUC-PR
 - 🌱 Nivel intermediario em JS, Python e Java
 - 👯 A procura de colaborar com projetos Opensource
