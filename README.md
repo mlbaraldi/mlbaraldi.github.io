@@ -2,7 +2,7 @@
 
 - 🔭 Dev / Tecnospeed
 - ⚡ Estudante de Analise e Desenvolvimento de Sistemas na PUC-PR
-- 🌱 Nivel intermediario em JS, Python e Java
+- 🌱 NodeJS / Java
 - 👯 A procura de colaborar com projetos Opensource
 - 📫 Contato? mlbaraldi@hotmail.com
 
