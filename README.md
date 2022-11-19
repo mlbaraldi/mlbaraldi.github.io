@@ -1,7 +1,7 @@
 ### Ola 👋 Marcelo Baraldi aqui
 
 - 🔭 Dev / Tecnospeed
-- ⚡ Estudante de Analise e Desenvolvimento de Sistemas na PUC-PR
+- ⚡ Graduado de Analise e Desenvolvimento de Sistemas na PUC-PR
 - 🌱 NodeJS / Java
 - 👯 A procura de colaborar com projetos Opensource
 - 📫 Contato? mlbaraldi@hotmail.com
