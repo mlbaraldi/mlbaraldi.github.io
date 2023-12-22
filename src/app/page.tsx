@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="p-2 min-h-screen">
+    <div className="p-2 min-h-screen flex items-center flex-col">
       <div className="max-w-screen-lg p-8">
         {/* Avatar and Introduction Section */}
         <div className="gap:5 lg:gap-56 items-center flex flex-col lg:flex-row" >
