@@ -12,7 +12,7 @@ const Logobox = ({ children }: PropsWithChildren) => {
 }
 
 const BaseIcon = () => {
-  const baseIcon = "/images/BaseIcon.png"
+  const baseIcon = "/baseicon.png"
   return (
     <Link className={buttonVariants({
       variant: 'navbox',

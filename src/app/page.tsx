@@ -8,7 +8,7 @@ export default function Home() {
         <div className="grid grid-cols-2 items-center">
           <Image
             className="mx-auto w-50 h-45 rounded-full overflow-hidden"
-            src="/images/TestCoder.png"
+            src="/testcoder.png"
             alt="logo"
             width={300}
             height={450}
@@ -17,9 +17,10 @@ export default function Home() {
           <div className="flex flex-col items-center p-10 m-5 ">
             <div className="inline-block w-40 h-40 rounded-full overflow-hidden">
               <Image
-                src="/images/Me.png"
+                src="/myself.png"
                 alt="Profile image"
-                className="rounded-full w-40 h-40 object-cover opacity-90"
+                className="rounded-full w-40 h-40 object-cover opacity-90 " width={40}
+                height={40}
               />
             </div>
             <h2 className="text-3xl font-bold p-5 bg-black bg-opacity-25 rounded-3xl">Marcelo Baraldi</h2>
