@@ -40,7 +40,7 @@ export default function Home() {
         {/* Image and Terminal Section */}
         <div className="gap-5 items-center flex flex-col lg:flex-row">
           {/* Image section */}
-          <div className="flex flex-col items-center w-full lg:w-1/4 lg:order-1 m-5">
+          <div className="flex flex-col items-center w-full lg:w-1/4 order-2 xl:order-0 m-5">
             <Image
               className="mx-auto w-auto h-auto rounded-full overflow-hidden mt-4"
               src="/testcoder.png"
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
 
           {/* Terminal section */}
-          <div className="flex items-center justify-center w-full md:w-1/2  rounded-2xl p-4 mt-5 md:ml-5 lg:order-2" >
+          <div className="flex items-center justify-center w-full md:w-1/2  rounded-2xl p-4 mt-5 md:ml-5 order-1" >
             <Terminal />
           </div>
         </div>
