@@ -12,7 +12,7 @@ const Navbar = () => {
       <MaxWidthWrapper>
         <div className='flex items-center justify-between h-14 border-b '>
           <BaseIcon />
-          <div className='hidden items-center space-x-20 sm:flex '>
+          <div className='hidden items-center space-x-20 xl:flex'>
             <Link className={buttonVariants({
               variant: 'ghost',
               size: 'sm'
@@ -53,7 +53,7 @@ const Navbar = () => {
           })} >
             <ThemeSwitcher />
           </div>
-          <div className='sm:hidden'>
+          <div className='xl:hidden'>
             <Hamburger />
           </div>
         </div>
