@@ -27,7 +27,7 @@ export default function Home() {
             <p className="p-3">Digital Enthusiast // analyze - think - develop</p>
           </div>
           <div className='flex items-center justify-center h-[300px] w-[500px] bg-gray-900 rounded-2xl p-4 bg-opacity-80'>
-            <p className='text-center font-medium leading-loose'>
+            <p className='text-center font-medium leading-loose text-white'>
               I&apos;m Marcelo Baraldi, a budding full-stack developer from Brazil. Currently,
               I&apos;m immersed in the world of web development, learning and working with technologies such as Next.js, React, Node.js,
               TypeScript, Tailwind CSS, and even a bit of Delphi. Excited about the endless possibilities of coding and eager to grow in this field.

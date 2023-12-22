@@ -20,7 +20,7 @@ const BaseIcon = () => {
     })} href="/">
       <Logobox>
         <Image src={baseIcon} alt="logo" width={20} height={20} />
-        <h2 className="p-4 flex z-40 font-medium">Marcelo Baraldi</h2>
+        <h2 className="p-4 flex z-40 font-bold tracking-wider">dev.mlb</h2>
       </Logobox>
 
     </Link>

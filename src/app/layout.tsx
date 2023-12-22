@@ -8,7 +8,7 @@ const roboto = Roboto_Condensed({
 })
 
 export const metadata: Metadata = {
-  title: 'Marcelo Baraldi  Just a dev',
+  title: 'Just a dev',
   description: 'personal page',
 }
 
