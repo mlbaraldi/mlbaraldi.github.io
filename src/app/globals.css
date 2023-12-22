@@ -72,7 +72,7 @@
     @apply border-border ;
   }
   body {
-    @apply GrainyLight bg-background text-foreground min-h-screen antialiased dark:bg-gradient-to-bl from-black via-gray-900 to-black;
+    @apply GrainyLight text-foreground min-h-screen antialiased dark:bg-gradient-to-bl from-black via-gray-900 to-black;
   }
 }
 
