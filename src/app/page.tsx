@@ -21,7 +21,10 @@ export default function Home() {
               Marcelo Baraldi
             </h2>
             <p className="p-1 text-center">
-              Dev - Digital Enthusiast <br />// analyze - think - develop
+              Dev - Digital Enthusiast
+            </p>
+            <p className="text-center">
+              analyze - think - develop
             </p>
           </div>
 
