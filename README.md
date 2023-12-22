@@ -2,8 +2,8 @@
 
 - 🔭 Dev / Tecnospeed
 - ⚡ Graduado de Analise e Desenvolvimento de Sistemas na PUC-PR
-- 🌱 Node / Type / Next
-- 👯 A procura de colaborar com projetos Opensource
+- 🌱 Next / TS / Node / Delphi
+- ⚡ Sempre aprendendo, sempre crescendo
 - 📫 Contato? mlbaraldi@hotmail.com
 
 <!--
