@@ -55,7 +55,7 @@ const Terminal = () => {
   };
 
   return (
-    <div className="h-[300px] w-[500px] bg-black rounded-2xl p-2 bg-opacity-80 dark:bg-opacity-30">
+    <div className="h-[300px] w-[500px] bg-black rounded-2xl lg:p-2 bg-opacity-80 dark:bg-opacity-30">
       <div
         className={`relative flex flex-col h-full border-1 border-solid border-[#333] bg-var(--bg) text-var(--fg) font-var(--font-mono) leading-1.5 text-base whitespace-pre-wrap break-all ${lineCount >= 5 ? 'rose' : ''
           }`}
@@ -65,7 +65,7 @@ const Terminal = () => {
           <span className="bg-[#FFBD2E] h-3 w-3 rounded-full mr-2"></span>
           <span className="bg-[#27C93F] h-3 w-3 rounded-full mr-2"></span>
         </div>
-        <div className="flex-1 p-12 text-white font-light">
+        <div className="flex-1 p-4 lg:p-10 text-white font-light">
           {renderLine('introducingMyself()')}
           {lineCount >= 1 && renderLine('Made with Next.js 14 and TailwindCSS')}
           {lineCount >= 2 &&

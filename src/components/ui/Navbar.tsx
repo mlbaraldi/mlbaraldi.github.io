@@ -53,7 +53,7 @@ const Navbar = () => {
           })} >
             <ThemeSwitcher />
           </div>
-          <div className='xl:hidden'>
+          <div className='mr-10 xl:hidden'>
             <Hamburger />
           </div>
         </div>
