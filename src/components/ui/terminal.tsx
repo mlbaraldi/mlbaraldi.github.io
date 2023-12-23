@@ -60,7 +60,7 @@ const Terminal = () => {
         className={`relative flex flex-col h-full border-1 border-solid border-[#333] bg-var(--bg) text-var(--fg) font-var(--font-mono) leading-1.5 text-base whitespace-pre-wrap break-all ${lineCount >= 5 ? 'rose' : ''
           }`}
       >
-        <div className="inline-flex flex-row-reverse">
+        <div className="inline-flex flex-row-reverse lg:p-1 p-3">
           <span className="bg-[#FF5F56] h-3 w-3 rounded-full mr-2"></span>
           <span className="bg-[#FFBD2E] h-3 w-3 rounded-full mr-2"></span>
           <span className="bg-[#27C93F] h-3 w-3 rounded-full mr-2"></span>
