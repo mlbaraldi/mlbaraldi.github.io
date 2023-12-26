@@ -32,7 +32,7 @@ const Navbar = () => {
               className={buttonVariants({
                 variant: 'ghost',
                 size: 'sm',
-              })} href='https://www.linkedin.com/in/mlbaraldi' passHref>
+              })} href='https://www.linkedin.com/in/mlbaraldi' passHref target="_blank">
               <LinkedinIcon className='ml-1.5 h-5 w-5' />
               <p className="p-2">Linkedin</p>
             </Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
               className={buttonVariants({
                 variant: 'ghost',
                 size: 'sm',
-              })} href='https://github.com/mlbaraldi' passHref>
+              })} href='https://github.com/mlbaraldi' passHref target="_blank">
               <GithubIcon className='ml-1.5 h-5 w-5' />
               <p className="p-2">Github</p>
             </Link>
