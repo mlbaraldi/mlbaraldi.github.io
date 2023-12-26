@@ -49,7 +49,7 @@ export default function Home() {
           {/* Image section */}
           <div className="flex flex-col items-center w-1/2 h-25   m-5 lg:order-1">
             <Image
-              className="mx-auto w-auto h-auto rounded-full overflow-hidden mt-4"
+              className="mx-auto ml-6 w-auto h-auto rounded-full overflow-hidden mt-4"
               src="/testcoder.png"
               alt="logo"
               width={300}

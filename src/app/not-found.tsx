@@ -12,7 +12,7 @@ const NotFound = () => {
       <div className=" p-10">
         <Link
           className={buttonVariants({
-            variant: 'ghost',
+            variant: 'default',
             size: 'lg',
           })} href='/' passHref>
           Return Home
