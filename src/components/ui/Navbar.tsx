@@ -1,12 +1,13 @@
 import { GithubIcon, LineChartIcon, LinkedinIcon, Terminal } from "lucide-react";
 import Link from "next/link";
+import { ReactNode } from "react";
 import BaseIcon from "../BaseIcon";
 import Hamburger from "./Hamburger";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { buttonVariants } from "./button";
 
-const components: { title: string; href: string; description: string, icon: LucideIcon }[] = [
+const components: { title: string; href: string; description: string, icon: ReactNode }[] = [
   {
     title: "Works",
     href: "/works",
@@ -29,7 +30,7 @@ const components: { title: string; href: string; description: string, icon: Luci
     icon: <LinkedinIcon className='ml-1.5 h-5 w-5' />
   },
   {
-    title: "Github",
+    title: "GitHub",
     href: "https://github.com/mlbaraldi",
     description:
       "My github page.",
