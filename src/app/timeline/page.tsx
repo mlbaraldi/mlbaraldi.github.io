@@ -5,7 +5,7 @@ const Works = () => {
       <h1 className="text-3xl font-bold mb-4 text-center p-5">TIMELINE - a brief summary</h1>
       <div className="text-justify font-medium leading-loose text-lg">
         <p>
-          Marcelo Baraldi was born in Brazil in 1989. Since his childhood, he has displayed a keen interest in technology, spending hours exploring and learning on the command lines of his father's personal computer, an Intel 286. This early affinity for technology often placed him in front of the computer, where he routinely tackled and solved problems.
+          Marcelo Baraldi was born in Brazil in 1989. Since his childhood, he has displayed a keen interest in technology, spending hours exploring and learning on the command lines of his father&apos;s personal computer, an Intel 286. This early affinity for technology often placed him in front of the computer, where he routinely tackled and solved problems.
         </p>
 
         <p>
