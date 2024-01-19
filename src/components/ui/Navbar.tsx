@@ -24,7 +24,7 @@ const components: { title: string; href: string; description: string, icon: Reac
   },
   {
     title: "Linkedin",
-    href: "/https://www.linkedin.com/in/mlbaraldi",
+    href: "https://www.linkedin.com/in/mlbaraldi",
     description:
       "My Linkedin page.",
     icon: <LinkedinIcon className='ml-1.5 h-5 w-5' />
