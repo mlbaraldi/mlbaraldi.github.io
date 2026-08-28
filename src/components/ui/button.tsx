@@ -5,25 +5,25 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "pixel-font inline-flex items-center justify-center whitespace-nowrap border-2 border-transparent text-[9px] font-medium uppercase transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background active:translate-x-1 active:translate-y-1 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "border-primary bg-primary text-primary-foreground shadow-[4px_4px_0_hsl(var(--accent))] hover:border-accent hover:bg-accent hover:text-accent-foreground",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "border-destructive bg-destructive text-destructive-foreground shadow-[4px_4px_0_hsl(var(--border))] hover:brightness-125",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border-input bg-background shadow-[3px_3px_0_hsl(var(--input))] hover:bg-accent hover:text-accent-foreground",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+          "border-secondary bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground",
+        ghost: "hover:border-primary hover:bg-primary hover:text-primary-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        navbox: "hover:border-b-2 border-blue-400 hover:text-accent-foreground ",
+        navbox: "border-transparent hover:border-secondary hover:bg-secondary hover:text-secondary-foreground",
       },
       size: {
         default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        sm: "h-10 px-3",
+        lg: "h-12 px-8",
         icon: "h-10 w-10",
       },
     },

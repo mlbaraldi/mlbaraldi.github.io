@@ -6,45 +6,33 @@ import { Frame, Keyframes } from "./react-keyframes";
 const sleepDuration = 500
 const getTypingDuration = () => 80 + 80 * (Math.random() - 0.5)
 
-
 const Line = ({ text, noPrompt = false, noCaret = false }: { text: string, noPrompt?: boolean, noCaret?: boolean }) => (
   <>
-    {!noPrompt && <span className="text-green-500">▲ / ~  </span>}
+    {!noPrompt && <span className="text-[#719984]">&gt;  </span>}
     {text}
-    {!noCaret && <span className="text-green-500 bg-black inline-block w-2 h-15 relative bottom-1 align-middle">|</span>}
+    {!noCaret && <span className="blink relative bottom-px inline-block h-4 w-2 bg-[#719984] align-middle">▮</span>}
   </>
 );
-
 
 const Terminal = () => {
   const [lineCount, setLineCount] = useState(0);
 
   const renderLine = (text: string) => {
     const frames = [];
-
-    // starting frame
     frames.push(
-      <Frame duration={sleepDuration} key={`${text}-first`}>
-        <Line text="" />
-      </Frame>
+      <Frame duration={sleepDuration} key={`${text}-first`}><Line text="" /></Frame>
     );
 
-    // typing out the line
     for (let i = 0; i < text.length; i++) {
       const isLastLetter = i === text.length - 1;
       const duration = isLastLetter ? sleepDuration : getTypingDuration();
       frames.push(
-        <Frame duration={duration} key={`${text}-${i}`}>
-          <Line text={text.slice(0, i + 1)} />
-        </Frame>
+        <Frame duration={duration} key={`${text}-${i}`}><Line text={text.slice(0, i + 1)} /></Frame>
       );
     }
 
-    // ending frame
     frames.push(
-      <Frame key={`${text}-last`}>
-        <Line text={text} noCaret />
-      </Frame>
+      <Frame key={`${text}-last`}><Line text={text} noCaret /></Frame>
     );
 
     return (
@@ -55,32 +43,24 @@ const Terminal = () => {
   };
 
   return (
-    <div className="h-[300px] w-[500px] bg-black rounded-2xl lg:p-2 bg-opacity-80 dark:bg-opacity-30">
-      <div
-        className={`relative flex flex-col h-full border-1 border-solid border-[#333] bg-var(--bg) text-var(--fg) font-var(--font-mono) leading-1.5 text-base whitespace-pre-wrap break-all ${lineCount >= 5 ? 'rose' : ''
-          }`}
-      >
-        <div className="inline-flex flex-row-reverse lg:p-1 p-3">
-          <span className="bg-[#FF5F56] h-3 w-3 rounded-full mr-2"></span>
-          <span className="bg-[#FFBD2E] h-3 w-3 rounded-full mr-2"></span>
-          <span className="bg-[#27C93F] h-3 w-3 rounded-full mr-2"></span>
+    <div className="pixel-border h-[330px] w-full max-w-[560px] bg-[#101418] p-2">
+      <div className="relative flex h-full flex-col border border-[#46505a] bg-[#0c1013] font-mono text-sm leading-normal text-[#b9c0c7] sm:text-base">
+        <div className="flex h-9 items-center justify-between border-b-2 border-[#46505a] bg-[#151a1f] px-3">
+          <span className="font-mono text-xs tracking-widest text-[#7f99aa]">ENGINEERING_PROFILE</span>
+          <div className="flex gap-2" aria-hidden="true">
+            <span className="h-3 w-3 bg-[#865c5c]"></span>
+            <span className="h-3 w-3 bg-[#b18f59]"></span>
+            <span className="h-3 w-3 bg-[#719984]"></span>
+          </div>
         </div>
-        <div className="flex-1 p-4 lg:p-10 text-white font-light">
-          {renderLine('introducingMyself()')}
-          {lineCount >= 1 && renderLine('Made with Next.js 14 and TailwindCSS')}
-          {lineCount >= 2 &&
-            renderLine('Open source on Github')}
-          {lineCount >= 3 && renderLine('pnpm dev')}
+        <div className="flex-1 break-all p-4 sm:p-6">
+          {renderLine('role: backend + fullstack')}
+          {lineCount >= 1 && renderLine('languages: TypeScript | Go | Java')}
+          {lineCount >= 2 && renderLine('architecture: microservices | cloud')}
+          {lineCount >= 3 && renderLine('ai: agentic workflows | orchestration')}
           {lineCount >= 4 && renderLine(' ')}
           {lineCount >= 5 && (
-            <>
-              <p className="text-[#1DC121] font-black">
-                <Line
-                  text="Welcome!  "
-                  noPrompt
-                />
-              </p>
-            </>
+            <p className="font-semibold text-[#719984]"><Line text="Architecture. Automation. Delivery.  " noPrompt /></p>
           )}
         </div>
       </div>

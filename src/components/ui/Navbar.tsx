@@ -1,79 +1,50 @@
+'use client'
+
+import { useT } from "@/lib/i18n";
 import { GithubIcon, LineChartIcon, LinkedinIcon, Terminal } from "lucide-react";
 import Link from "next/link";
-import { ReactNode } from "react";
 import BaseIcon from "../BaseIcon";
 import Hamburger from "./Hamburger";
+import LanguageSwitcher from "./LanguageSwitcher";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { buttonVariants } from "./button";
 
-const components: { title: string; href: string; description: string, icon: ReactNode }[] = [
-  {
-    title: "Works",
-    href: "/works",
-    description:
-      "Let me show you some stuff.",
-    icon: <Terminal className='ml-1.5 h-5 w-5' />
-  },
-  {
-    title: "Timeline",
-    href: "/timeline",
-    description:
-      "What was I up to.",
-    icon: <LineChartIcon className='ml-1.5 h-5 w-5' />
-  },
-  {
-    title: "Linkedin",
-    href: "https://www.linkedin.com/in/mlbaraldi",
-    description:
-      "My Linkedin page.",
-    icon: <LinkedinIcon className='ml-1.5 h-5 w-5' />
-  },
-  {
-    title: "GitHub",
-    href: "https://github.com/mlbaraldi",
-    description:
-      "My github page.",
-    icon: <GithubIcon className='ml-1.5 h-5 w-5' />
-  }
-]
-
 const Navbar = () => {
+  const t = useT()
+  const components = [
+    { title: t('nav.projects'), href: '/works', description: t('nav.projectsDescription'), icon: <Terminal className='ml-1.5 h-5 w-5' /> },
+    { title: t('nav.timeline'), href: '/timeline', description: t('nav.timelineDescription'), icon: <LineChartIcon className='ml-1.5 h-5 w-5' /> },
+    { title: t('nav.linkedin'), href: 'https://www.linkedin.com/in/mlbaraldi', description: t('nav.linkedinDescription'), icon: <LinkedinIcon className='ml-1.5 h-5 w-5' /> },
+    { title: t('nav.github'), href: 'https://github.com/mlbaraldi', description: t('nav.githubDescription'), icon: <GithubIcon className='ml-1.5 h-5 w-5' /> },
+  ]
+
   return (
-    <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b backdrop-blur-lg transition-all '>
+    <nav className='sticky inset-x-0 top-0 z-30 w-full border-b-4 border-primary bg-background/95'>
       <MaxWidthWrapper>
-        <div className='flex items-center justify-between h-14 border-b '>
+        <div className='flex h-16 items-center justify-between'>
           <BaseIcon />
-          <div className='hidden items-center space-x-20 xl:flex'>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-4 lg:w-[600px] ">
+          <div className='hidden items-center lg:flex'>
+            <ul className="flex items-center gap-2">
               {components.map((component) => (
-                <li key={component.title}>
+                <li key={component.href}>
                   <Link
                     title={component.description}
                     href={component.href}
-                    passHref
-                    className={buttonVariants({
-                      variant: 'ghost',
-                      size: 'sm'
-                    })}
+                    className={buttonVariants({ variant: 'ghost', size: 'sm' })}
                   >
                     {component.icon}
-                    <p className="p-2">{component.title}</p>
-
+                    <p className="pl-2">{component.title}</p>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-
-          {/* Theme switcher for all screens */}
-          <div className={buttonVariants({
-            variant: 'ghost',
-            size: 'sm',
-          })} >
+          <div className="ml-auto flex items-center gap-2 lg:ml-3">
+            <LanguageSwitcher />
             <ThemeSwitcher />
           </div>
-          <div className='mr-10 ml-10 xl:hidden'>
+          <div className='ml-2 lg:hidden'>
             <Hamburger />
           </div>
         </div>
@@ -81,6 +52,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
 
 export default Navbar;

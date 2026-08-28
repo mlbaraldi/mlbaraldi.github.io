@@ -1,31 +1,30 @@
+'use client'
 
-const Works = () => {
+import { useT } from '@/lib/i18n'
+
+export default function Timeline() {
+  const t = useT()
+
   return (
-    <div className="mx-auto max-w-2xl p-12">
-      <h1 className="text-3xl font-bold mb-4 text-center p-5">TIMELINE - a brief summary</h1>
-      <div className="text-justify font-medium leading-loose text-lg">
-        <p>
-          Marcelo Baraldi was born in Brazil in 1989. Since his childhood, he has displayed a keen interest in technology, spending hours exploring and learning on the command lines of his father&apos;s personal computer, an Intel 286. This early affinity for technology often placed him in front of the computer, where he routinely tackled and solved problems.
-        </p>
+    <main className="boot-in mx-auto min-h-screen max-w-5xl px-5 py-14 sm:px-10 sm:py-20">
+      <header className="mb-14 max-w-3xl">
+        <p className="pixel-font mb-4 text-xs tracking-[0.18em] text-primary">{t('timeline.eyebrow')}</p>
+        <h1 className="text-3xl text-secondary sm:text-5xl">{t('timeline.title')}</h1>
+        <p className="mt-6 text-base leading-7 text-muted-foreground sm:text-lg">{t('timeline.intro')}</p>
+      </header>
 
-        <p>
-          At the age of 18, Marcelo embarked on an academic journey at UFSC (Federal University of Santa Catarina), graduating in Cinema in 2012. This experience broadened his horizons, providing him with a unique perspective on the world and instilling the belief that both objective and subjective knowledge contribute to the creation of new functionalities or insights.
-        </p>
-
-        <p>
-          His path in software development took a new turn in 2019 when he enrolled in the undergraduate program in Systems Analysis and Development at PUC-PR. This marked his return to the academic environment and fueled his quest for knowledge in the technology field.
-        </p>
-
-        <p>
-          In 2020, Marcelo entered a new phase by joining Tecnospeed, a company where he continues to work to this day. Playing a pivotal role in backend development, he leverages various technologies such as Delphi, NodeJS, TypeScript, and AWS services.
-        </p>
-
-        <p>
-          As time has passed and his career has matured, Marcelo is focused on specializing as a FullStack Developer. Currently, he is engaged in projects utilizing modern technologies like Next, TypeScript, Prism, gRPC, and Tailwind, showcasing his dedication to ongoing professional improvement.
-        </p>
+      <div className="relative space-y-7 border-l-4 border-border pl-6 sm:pl-10">
+        {[1, 2, 3, 4, 5, 6, 7].map((item, index) => (
+          <article
+            key={item}
+            className={`pixel-card relative p-5 before:absolute before:-left-[38px] before:top-8 before:h-4 before:w-4 sm:p-7 sm:before:-left-[54px] ${index % 2 === 0 ? 'before:bg-primary' : 'before:bg-accent sm:ml-8 sm:before:-left-[86px]'}`}
+          >
+            <p className="mb-3 text-xs font-semibold tracking-wider text-primary">{t(`timeline.${item}.period`)}</p>
+            <h2 className="mb-4 text-xl text-secondary sm:text-2xl">{t(`timeline.${item}.title`)}</h2>
+            <p className="text-sm leading-7 sm:text-base">{t(`timeline.${item}.text`)}</p>
+          </article>
+        ))}
       </div>
-    </div>
+    </main>
   );
-};
-
-export default Works;
+}
