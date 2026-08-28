@@ -29,11 +29,11 @@ export default function Home() {
             <div className="pixel-border relative bg-muted p-2">
               <span className="absolute -right-3 -top-3 h-5 w-5 bg-accent" aria-hidden="true" />
               <Image
-                src="/myself.png"
-                alt={t('home.avatarAlt')}
+                src="/profile.jpg"
+                alt="Marcelo Luiz Baraldi"
                 className="pixel-image h-52 w-44 object-cover object-top contrast-110 sm:h-64 sm:w-52"
-                width={425}
-                height={540}
+                width={960}
+                height={1280}
               />
             </div>
             <h1 className="mt-7 text-center text-2xl text-secondary lg:text-left lg:text-3xl">{t('home.name')}</h1>
